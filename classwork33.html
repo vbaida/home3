@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--зробити масив з 10 чисел [2,17,13,6,22,31,45,66,100,-18]та:
+1. перебрати його циклом while
+2. перебрати його циклом for
+3. перебрати циклом while та вивести  числа тільки з непарним індексом
+4. перебрати циклом for та вивести  числа тільки з непарним індексом
+5. перебрати циклом while та вивести  числа тільки парні  значення
+6. перебрати циклом for та вивести  числа тільки парні  значення
+7. замінити кожне число кратне 3 на слово 'okten'
+8. вивести масив в зворотньому порядку.
+9. всі попередні завдання (окрім 8), але в зворотньому циклі (с заду на перед)-->
+
+<script>
+   let user = [2,17,13,6,22,31,45,66,100,-18]
+   let i=0
+   while (i<user.length) {
+       console.log(user[i])
+       i++
+   }
+
+   let user1 = [2,17,13,6,22,31,45,66,100,-18]
+   for (let j = 0; j < user1.length; j++) {
+       console.log(user1[j])
+       }
+
+   let user2 = [2,17,13,6,22,31,45,66,100,-18]
+   let q=0
+   while (q < user2.length) {
+           console.log(user2[q])
+       q+=2
+       }
+
+   let user3 = [2,17,13,6,22,31,45,66,100,-18]
+   for (let w = 0; w < user3.length; w++) {
+       if (w % 2 === 0) {
+           console.log(user3[w])
+                 }
+   }
+
+   let user4 = [2,17,13,6,22,31,45,66,100,-18];
+   let e=0
+   while (e < user4.length) {
+       let us = user4[e]
+       if (us%2===0)
+           console.log(us)
+           e++
+       }
+   let user5 = [2,17,13,6,22,31,45,66,100,-18]
+   for (let r = 0; r < user5.length; r++) {
+       let muse = user5[r]
+       if (muse % 2 === 0)
+           console.log(muse)
+                  }
+
+   let user6 = [2,17,13,6,22,31,45,66,100,-18]
+   for (let t = 0; t < user6.length; t++) {
+       if (user6[t] % 3 === 0)
+           user6[t]='okten'
+                  console.log(user6[t])
+       }
+
+   let user7 = [2,17,13,6,22,31,45,66,100,-18]
+      for (let y = user7.length - 1; y >= 0; y--) {
+       const user7Element = user7[y];
+       console.log(user7Element)
+   }
+
+   let user8 = [2,17,13,6,22,31,45,66,100,-18]
+   for (let u = user8.length - 1; u >= 0; u--) {
+       const user8Element = user8[u];
+       let muse1 = user8[u]
+       if (muse1 % 2 === 0)
+           console.log(muse1)
+   }
+
+  
+
+</script>
+</body>
+</html>
